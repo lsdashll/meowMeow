@@ -108,8 +108,8 @@
             next_number();
         }
         function next_number(){
-            var r =  Math.round(Math.random()*999)+"";
-            numElem.innerText = r.padStart(3,'0');
+            var r =  Math.round(Math.random()*999999)+"";
+            numElem.innerText = r.padStart(6,'0');
             n--;
             if(n>0){
                setTimeout(next_number,150-n); 
